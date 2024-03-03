@@ -19,47 +19,47 @@
     
   </head>
   <body>
-
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #b21a15">
-        <!-- Navbar Content -->
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/logito.jpg" alt="logo" class="logo" />
-          </a>
-          <!-- Navbar Toggler -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Navbar Links -->
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              <a class="nav-link" href="#quienes-somos-content">Quienes Somos</a>
-              <a class="nav-link" href="#Equipo">Equipo </a>
-              <a class="nav-link" href="#galeria">Galeria </a>
-              <a class="nav-link" href="#servicios">Servicios</a>
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </div>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #b21a15" id="index">
+          <!-- Navbar Content -->
+          <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <!-- Agrega la clase "logo" para que la animación se aplique solo al logo -->
+                  <img src="./assets/logito.jpg" alt="logo" class="logo" />
+              </a>
+              <!-- Navbar Toggler -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Navbar Links -->
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                      <a class="nav-link active" href="index.html">Inicio</a>
+                      <a class="nav-link" href="#quienes-somos-content">Quienes Somos</a>
+                      <a class="nav-link" href="#Equipo">Equipo</a>
+                      <a class="nav-link" href="#galeria">Galeria</a>
+                      <a class="nav-link" href="#servicios">Servicios</a>
+                      <a class="nav-link" href="#contacto">Contacto</a>
+                  </div>
+              </div>
           </div>
-        </div>
       </nav>
-  
+
       <!-- Hero Section -->
-      <section class="hero d-flex justify-content-center ">
-        <div class="content-wrapper">
-          <h1>
-            <span style="color: #000000">QUALITY</span
-            ><span style="color: #b21a15">MILK</span>
-          </h1>
-          <h4>Consultora de Calidad de Leche</h4>
-          <a href="#contacto" class="cta-button">Contactar</a>
-        </div>
+      <section class="hero d-flex justify-content-center" id="">
+          <div class="content-wrapper">
+              <h1>
+                  <span style="color: #000000">QUALITY</span
+                  ><span style="color: #b21a15">MILK</span>
+              </h1>
+              <h4>Consultora de Calidad de Leche</h4>
+              <a href="#contacto" class="cta-button">Contactar</a>
+          </div>
       </section>
-    </header>
-  
+  </header>
+
     <!-- Quienes Somos Section -->
     <section class="quienes-somos-section" id="quienes-somos-content">
       <!-- Content -->
@@ -146,7 +146,7 @@
       </div>
     </section>
     
-    <section class="gallery-section">
+    <section class="gallery-section" id="galeria">
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-12">
@@ -214,51 +214,9 @@
       </div>
     </section>
     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    </body>
-    </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     <!-- Servicios Section -->
-    <section class="servicios text-center" id="servicios">
+    <section class="servicios text-center " id="servicios">
       <!-- Contenido Servicios -->
       <h2 class="mb-4">Nuestros <span style="color: #b21a15;">Servicios</span></h2>
       <div class="row">
@@ -400,7 +358,15 @@
     <footer>
       <h6>Quality Milk</h6>
       <p>Todos los derechos reservados - 2024</p>  
-      <p>Seguinos en <a href="https://www.instagram.com/quality.milk/" target="_blank"><i class="fa-brands fa-instagram icono-ig"></i></a></p> 
+      <p>Seguinos en: </p> 
+      <a class="nav-link" href="https://www.instagram.com/quality.milk/" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+        </a>
+         <a class="nav-link" href="https://www.facebook.com/quality.milk.consulting" target="_blank">
+        <i class="fab fa-facebook"></i> Facebook
+       </a>
+      
+      
     </footer>
   
 
@@ -415,5 +381,36 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-zp4GUKjezovJr67tA8uNxkOUKfrJMt0wnmpw7EjF7g8aKlsOc7U3Zl+eaN/t4Q3s"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy9Q9JYZL/Dw6jmx0bp3B9DE32FtrB0EjS"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI/t1f1D4Gvdpnq/2PpbjD+2HIplUVqz2U5aFf8E="
+    crossorigin="anonymous"></script>
+    <script>
+      // JavaScript para agregar/quitar la clase 'active' al hacer clic en un enlace
+      document.addEventListener("DOMContentLoaded", function () {
+          var navbarLinks = document.querySelectorAll('.navbar-nav a');
+  
+          navbarLinks.forEach(function (link) {
+              link.addEventListener('click', function () {
+                  navbarLinks.forEach(function (link) {
+                      link.classList.remove('active');
+                  });
+  
+                  this.classList.add('active');
+              });
+          });
+      }); 
+
+      
+  </script>
+
   </body>
 </html>

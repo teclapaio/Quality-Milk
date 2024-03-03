@@ -8,10 +8,19 @@
     
 }
 
+body {
+  padding-top: 95px; /* Ajusta el valor según la altura de tu barra de navegación */
+}
      /* index */
 
+     .navbar-brand img {
+      transition: transform 0.3s ease-in-out;
+  }
+  .navbar-brand:hover img {
+    transform: scale(1.1); /* Puedes ajustar el valor según lo grande que desees que sea la escala */
+}
 .logo {
-    width: 50px;
+    width: 68px;
 border-radius: 25%;
 }
 
@@ -110,7 +119,7 @@ border-radius: 25%;
 
 
 .servicios{
-  background-color:white;
+  background-color:#D8D8D8;
   color: black;
  
   text-align: justify;
@@ -118,7 +127,6 @@ border-radius: 25%;
 }
 
 .card-img-top {
-  height:400px; 
   object-fit: cover;
 }
 
