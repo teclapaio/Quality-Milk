@@ -15,14 +15,33 @@
 border-radius: 25%;
 }
 
+
+.navbar {
+  padding: 10px;
+}
+
+.navbar-brand {
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
 .hero{
     background-image: url("../assets/EnriTrabajando55.jpg");
-    height: 700px;
-
+    height: 130vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    
     
 }
 
 .content-wrapper {
+  width: 100%;
     text-align: center; /* Alinea el contenido en el centro */
   }
 
@@ -52,7 +71,7 @@ border-radius: 25%;
 .quienes-somos-section {
   background-color: #D8D8D8;
   color: #000;
-  padding: 40px 0; 
+  padding: 40px 20px; 
   text-align:justify; 
   word-spacing: 0px; /* Ajusta el espaciado según sea necesario */
 }
@@ -65,23 +84,24 @@ border-radius: 25%;
 
 
 .quienes-somos-text {
-  flex-basis: 60%; 
+  flex-basis: 100%; 
   justify-content: justify;/* Ancho del 60% para el texto */
 }
 
 .quienes-somos-image {
-  flex-basis: 35%; /* Ancho del 35% para la imagen */
+  flex-basis: 100%; /* Ancho del 35% para la imagen */
   margin-top: 20px; /* Ajusta el margen superior según sea necesario */
 }
 
 .img-fluid2{
-  width: 400px;
-  margin-bottom: 130px;
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  margin-bottom: 20px 
 }
 
 
 .titulo-NMC{
   margin-top: 10px;
+  height: 100p;
 
 }
 
@@ -92,8 +112,9 @@ border-radius: 25%;
 .servicios{
   background-color:white;
   color: black;
-  padding: 40px 0; 
+ 
   text-align: justify;
+  padding: 40px 20px;
 }
 
 .card-img-top {
@@ -120,6 +141,7 @@ border-radius: 25%;
 
 .container1 {
   background-color: #D8D8D8;
+  padding: 40px 20px;
 }
 .container2{
   background-color: white;
@@ -134,11 +156,12 @@ border-radius: 25%;
        /* seccion de equipo */
 .Equipo {
   background-color: #D8D8D8;;
-  text-align:justify
+  text-align:justify;
+  padding: 40px 20px;
 }
 .equipo-img {
-  width: 150px; /* ajusta el tamaño deseado para las imágenes */
-  height: 150px; /* ajusta el tamaño deseado para las imágenes */
+  width: 120px; /* ajusta el tamaño deseado para las imágenes */
+  height: 120px; /* ajusta el tamaño deseado para las imágenes */
   object-fit: cover; /* para mantener la proporción de la imagen */
 }
 
@@ -177,8 +200,43 @@ footer {
 
 
   .whatsapp-icon img {
-    width: 60px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer; 
+}
+
+
+
+/* Media Queries */
+@media (min-width: 768px) {
+  /* Ajusta estilos para pantallas más grandes */
+  .quienes-somos-section {
+    padding: 40px;
+  }
+
+  .quienes-somos-text {
+    flex-basis: 60%;
+  }
+
+  .quienes-somos-image {
+    flex-basis: 35%;
+  }
+
+  .img-fluid2 {
+    width: 400px;
+    margin-bottom: 130px;
+  }
+
+  .Equipo {
+    padding: 40px;
+  }
+
+  .card-img-top {
+    height: 400px;
+  }
+
+  .container1 {
+    padding: 40px;
+  }
 }
