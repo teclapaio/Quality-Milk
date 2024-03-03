@@ -171,6 +171,17 @@ border-radius: 25%;
 }
 
 
+.gallery-item {
+  margin-bottom: 15px;
+}
+.gallery-section {
+  background-color: #D8D8D8; /* Color de fondo gris para la sección de galería */
+  padding: 50px 0; /* Ajusta el espacio interno según sea necesario */
+  text-align: center; 
+}
+.gallery-item {
+  margin-bottom: 15px;
+}
 
 /* seccion de FOOTER */
 footer {
