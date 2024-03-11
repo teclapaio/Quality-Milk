@@ -9,7 +9,7 @@
 }
 
 body {
-  padding-top: 95px; /* Ajusta el valor según la altura de tu barra de navegación */
+  padding-top: 70px; /* Ajusta el valor según la altura de tu barra de navegación */
 }
      /* index */
 
@@ -17,10 +17,10 @@ body {
       transition: transform 0.3s ease-in-out;
   }
   .navbar-brand:hover img {
-    transform: scale(1.1); /* Puedes ajustar el valor según lo grande que desees que sea la escala */
+    transform: scale(1.5); /* Puedes ajustar el valor según lo grande que desees que sea la escala */
 }
 .logo {
-    width: 68px;
+    width: 40px;
 border-radius: 25%;
 }
 
@@ -68,8 +68,8 @@ border-radius: 25%;
   }
   
   .cta-button:hover {
-    background-color: #000000;
-    color: #ffffff;
+    background-color:white;
+    color:#b21a15;
   } 
 
 
@@ -78,6 +78,7 @@ border-radius: 25%;
 /* ESTILO DE QUIENES SOMOS */ 
 
 .quienes-somos-section {
+  padding-top: 70px;
   background-color: #D8D8D8;
   color: #000;
   padding: 40px 20px; 
@@ -148,9 +149,12 @@ border-radius: 25%;
 }
 
 .container1 {
-  background-color: #D8D8D8;
-  padding: 40px 20px;
+  background-color:#D8D8D8;
+
+  
 }
+
+
 .container2{
   background-color: white;
 }
@@ -165,17 +169,19 @@ border-radius: 25%;
 .Equipo {
   background-color: #D8D8D8;;
   text-align:justify;
-  padding: 40px 20px;
+  padding: 40px 40px;
 }
 .equipo-img {
-  width: 120px; /* ajusta el tamaño deseado para las imágenes */
-  height: 120px; /* ajusta el tamaño deseado para las imágenes */
+  width: 140px; /* ajusta el tamaño deseado para las imágenes */
+  height: 140px; /* ajusta el tamaño deseado para las imágenes */
   object-fit: cover; /* para mantener la proporción de la imagen */
 }
 
 .equipo-text {
-  font-size: 16px; /* ajusta el tamaño de fuente deseado para el texto */
+  font-size: 15px; /* ajusta el tamaño de fuente deseado para el texto */
   line-height: 1.5; /* ajusta el espacio entre líneas del texto */
+  text-align:justify;
+  height: 100%;
 }
 
 
@@ -189,6 +195,11 @@ border-radius: 25%;
 }
 .gallery-item {
   margin-bottom: 15px;
+} 
+.gallery-item img {
+  height: 400px; /* Puedes ajustar esta altura según tus preferencias */
+  width: 400px;
+  object-fit: cover; /* Esto asegura que la imagen cubra completamente el contenedor sin distorsionarse */
 }
 
 /* seccion de FOOTER */
