@@ -1,0 +1,10 @@
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+    &::selection{
+        background-color:#b21a15;
+        color: white;
+    }
+
+}

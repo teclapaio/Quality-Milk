@@ -1,0 +1,26 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: #b21a15;
+  color: white;
+}
+*::selection {
+  background-color: #b21a15;
+  color: white;
+}
+
+.logo {
+  width: 40px;
+  border-radius: 25%;
+}
+
+.navbar {
+  padding: 10px;
+}
+
+.navbar-brand {
+  margin-right: 20px;
+}/*# sourceMappingURL=estilo.css.map */

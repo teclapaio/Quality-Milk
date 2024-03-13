@@ -7,6 +7,10 @@
     box-sizing: border-box;
     
 }
+*::selection {
+  background-color:#b21a15;
+  color: white;
+}
 
 body {
   padding-top: 70px; /* Ajusta el valor según la altura de tu barra de navegación */
