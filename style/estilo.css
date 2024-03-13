@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
@@ -12,6 +13,14 @@
   color: white;
 }
 
+.navbar-brand img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.5);
+}
+
 .logo {
   width: 40px;
   border-radius: 25%;
@@ -23,4 +32,207 @@
 
 .navbar-brand {
   margin-right: 20px;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.hero {
+  background-image: url("../assets/EnriTrabajando55.jpg");
+  height: 130vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.content-wrapper {
+  width: 100%;
+  text-align: center; /* Alinea el contenido en el centro */
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 10px;
+  margin-top: 15px;
+  background-color: #b21a15;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: #b21a15;
+}
+
+.quienes-somos-section {
+  padding-top: 70px;
+  background-color: #D8D8D8;
+  color: #000;
+  padding: 40px 20px;
+  text-align: justify;
+  word-spacing: 0px; /* Ajusta el espaciado según sea necesario */
+}
+
+.quienes-somos-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: justify;
+}
+
+.quienes-somos-text {
+  flex-basis: 100%;
+  justify-content: justify; /* Ancho del 60% para el texto */
+}
+
+.quienes-somos-image {
+  flex-basis: 100%; /* Ancho del 35% para la imagen */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.img-fluid2 {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  margin-bottom: 20px;
+}
+
+.titulo-NMC {
+  margin-top: 10px;
+  height: 100p;
+}
+
+/* seccion de equipo */
+.Equipo {
+  background-color: #D8D8D8;
+  text-align: justify;
+  padding: 40px 40px;
+}
+
+.equipo-img {
+  width: 140px; /* ajusta el tamaño deseado para las imágenes */
+  height: 140px; /* ajusta el tamaño deseado para las imágenes */
+  -o-object-fit: cover;
+     object-fit: cover; /* para mantener la proporción de la imagen */
+}
+
+.equipo-text {
+  font-size: 15px; /* ajusta el tamaño de fuente deseado para el texto */
+  line-height: 1.5; /* ajusta el espacio entre líneas del texto */
+  text-align:justify;
+  height: 100%;
+}
+
+.gallery-item {
+  margin-bottom: 15px;
+}
+
+.gallery-section {
+  background-color: #D8D8D8; /* Color de fondo gris para la sección de galería */
+  padding: 50px 0; /* Ajusta el espacio interno según sea necesario */
+  text-align: center;
+}
+
+.gallery-item {
+  margin-bottom: 15px;
+}
+
+.gallery-item img {
+  height: 400px; /* Puedes ajustar esta altura según tus preferencias */
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover; /* Esto asegura que la imagen cubra completamente el contenedor sin distorsionarse */
+}
+
+.servicios {
+  background-color: #D8D8D8;
+  color: black;
+  text-align: justify;
+  padding: 40px 20px;
+}
+
+.card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: #b21a15;
+}
+
+.card-text {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: justify;
+  height: 100%;
+}
+
+/*Seccion de CONTACTO*/
+.container1 {
+  background-color: #D8D8D8;
+}
+
+.container2 {
+  background-color: white;
+}
+
+/* seccion de FOOTER */
+footer {
+  background-color: #b21a15;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.icono-ig {
+  font-size: 20px;
+  margin-right: 15px;
+  color: white;
+}
+
+/* whatsaap icon */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.whatsapp-icon img {
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .quienes-somos-section {
+    padding: 40px;
+  }
+  .quienes-somos-text {
+    flex-basis: 60%;
+  }
+  .quienes-somos-image {
+    flex-basis: 35%;
+  }
+  .img-fluid2 {
+    width: 400px;
+    margin-bottom: 130px;
+  }
+  .Equipo {
+    padding: 40px;
+  }
+  .card-img-top {
+    height: 400px;
+  }
+  .container1 {
+    padding: 40px;
+  }
 }/*# sourceMappingURL=estilo.css.map */

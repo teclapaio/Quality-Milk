@@ -1,5 +1,5 @@
 
-
+/* reset */
 
 *{
     margin: 0%;
@@ -10,18 +10,22 @@
 *::selection {
   background-color:#b21a15;
   color: white;
-}
+} 
+
 
 body {
-  padding-top: 70px; /* Ajusta el valor según la altura de tu barra de navegación */
+  padding-top: 70px; 
 }
+
+ /* HEADER NavBar */ 
+
      /* index */
 
      .navbar-brand img {
       transition: transform 0.3s ease-in-out;
   }
   .navbar-brand:hover img {
-    transform: scale(1.5); /* Puedes ajustar el valor según lo grande que desees que sea la escala */
+    transform: scale(1.5); 
 }
 .logo {
     width: 40px;
@@ -40,7 +44,7 @@ border-radius: 25%;
 
 
 
-
+/* hero */
 
 
 .hero{
@@ -119,6 +123,46 @@ border-radius: 25%;
 
 }
 
+/*seccion de EQUIPO */ 
+
+       /* seccion de equipo */
+       .Equipo {
+        background-color: #D8D8D8;;
+        text-align:justify;
+        padding: 40px 40px;
+      }
+      .equipo-img {
+        width: 140px; /* ajusta el tamaño deseado para las imágenes */
+        height: 140px; /* ajusta el tamaño deseado para las imágenes */
+        object-fit: cover; /* para mantener la proporción de la imagen */
+      }
+      
+      .equipo-text {
+        font-size: 15px; /* ajusta el tamaño de fuente deseado para el texto */
+        line-height: 1.5; /* ajusta el espacio entre líneas del texto */
+        text-align:justify;
+        height: 100%;
+      }
+      
+      
+      .gallery-item {
+        margin-bottom: 15px;
+      }
+      .gallery-section {
+        background-color: #D8D8D8; /* Color de fondo gris para la sección de galería */
+        padding: 50px 0; /* Ajusta el espacio interno según sea necesario */
+        text-align: center; 
+      }
+      .gallery-item {
+        margin-bottom: 15px;
+      } 
+      .gallery-item img {
+        height: 400px; /* Puedes ajustar esta altura según tus preferencias */
+        width: 400px;
+        object-fit: cover; /* Esto asegura que la imagen cubra completamente el contenedor sin distorsionarse */
+      }
+      
+
 
 /* empieza section de SERVICIOS */ 
 
@@ -152,6 +196,9 @@ border-radius: 25%;
 
 }
 
+
+/*Seccion de CONTACTO*/ 
+
 .container1 {
   background-color:#D8D8D8;
 
@@ -168,43 +215,6 @@ border-radius: 25%;
 
  
 
-
-       /* seccion de equipo */
-.Equipo {
-  background-color: #D8D8D8;;
-  text-align:justify;
-  padding: 40px 40px;
-}
-.equipo-img {
-  width: 140px; /* ajusta el tamaño deseado para las imágenes */
-  height: 140px; /* ajusta el tamaño deseado para las imágenes */
-  object-fit: cover; /* para mantener la proporción de la imagen */
-}
-
-.equipo-text {
-  font-size: 15px; /* ajusta el tamaño de fuente deseado para el texto */
-  line-height: 1.5; /* ajusta el espacio entre líneas del texto */
-  text-align:justify;
-  height: 100%;
-}
-
-
-.gallery-item {
-  margin-bottom: 15px;
-}
-.gallery-section {
-  background-color: #D8D8D8; /* Color de fondo gris para la sección de galería */
-  padding: 50px 0; /* Ajusta el espacio interno según sea necesario */
-  text-align: center; 
-}
-.gallery-item {
-  margin-bottom: 15px;
-} 
-.gallery-item img {
-  height: 400px; /* Puedes ajustar esta altura según tus preferencias */
-  width: 400px;
-  object-fit: cover; /* Esto asegura que la imagen cubra completamente el contenedor sin distorsionarse */
-}
 
 /* seccion de FOOTER */
 footer {
@@ -234,7 +244,7 @@ footer {
 
 
   .whatsapp-icon img {
-    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 50px; 
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer; 
@@ -244,7 +254,7 @@ footer {
 
 /* Media Queries */
 @media (min-width: 768px) {
-  /* Ajusta estilos para pantallas más grandes */
+  
   .quienes-somos-section {
     padding: 40px;
   }

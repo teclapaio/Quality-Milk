@@ -1,0 +1,35 @@
+
+/* seccion de FOOTER */
+footer {
+    background-color: #b21a15;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  .icono-ig {
+    font-size: 20px;
+    margin-right: 15px;
+    color: white;
+  }
+  
+  
+  /* whatsaap icon */
+  
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  
+    .whatsapp-icon img {
+      width: 50px; 
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer; 
+  }
+  
