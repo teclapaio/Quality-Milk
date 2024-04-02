@@ -30,6 +30,7 @@ body {
 .logo {
     width: 40px;
 border-radius: 25%;
+max-height: 50px;
 }
 
 
@@ -113,7 +114,7 @@ border-radius: 25%;
 
 .img-fluid2{
   width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-  margin-bottom: 20px 
+  
 }
 
 
@@ -127,6 +128,9 @@ border-radius: 25%;
 
        /* seccion de equipo */
        .Equipo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         background-color: #D8D8D8;;
         text-align:justify;
         padding: 40px 40px;
@@ -144,9 +148,12 @@ border-radius: 25%;
         height: 100%;
       }
       
+
+
+
       
       .gallery-item {
-        margin-bottom: 15px;
+        margin-bottom: 0px;
       }
       .gallery-section {
         background-color: #D8D8D8; /* Color de fondo gris para la sección de galería */
@@ -154,7 +161,7 @@ border-radius: 25%;
         text-align: center; 
       }
       .gallery-item {
-        margin-bottom: 15px;
+        margin-bottom: 0px;
       } 
       .gallery-item img {
         height: 400px; /* Puedes ajustar esta altura según tus preferencias */
@@ -170,7 +177,7 @@ border-radius: 25%;
 .servicios{
   background-color:#D8D8D8;
   color: black;
- 
+ margin-bottom: 0px;
   text-align: justify;
   padding: 40px 20px;
 }
@@ -251,10 +258,98 @@ footer {
 }
 
 
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /* Adjustments for Navbar */
+  .navbar-brand img {
+    width: 30px;
+    max-height: 40px;
+  }
 
-/* Media Queries */
-@media (min-width: 768px) {
+  /* Adjustments for Hero Section */
+  .hero {
+    height: 100vh;
+  }
+
+  .content-wrapper {
+    padding-top: 20%;
+  }
+
+  /* Adjustments for Quienes Somos Section */
+  .quienes-somos-section {
+    padding: 20px;
+  }
+
+  .img-fluid2 {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+
+  /* Adjustments for Equipo Section */
+  .Equipo {
+    padding: 20px;
+  }
+
+  .equipo-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .equipo-text {
+    font-size: 12px;
+  }
+
+  /* Adjustments for Gallery Section */
+  .gallery-item img {
+    height: 250px;
+    width: 250px;
+  }
+
+  /* Adjustments for Servicios Section */
+  .servicios {
+    padding: 20px;
+  }
+
+  .card-img-top {
+    height: 250px;
+  }
+}
+
+/* Media Queries for Tablets */
+@media (min-width: 992px) {
+  /* Adjustments for Quienes Somos Section */
+  .quienes-somos-section {
+    padding: 30px;
+  }
   
+  .quienes-somos-text,
+  .quienes-somos-image {
+    flex-basis: 100%;
+    margin: 0 auto;
+  }
+
+  .img-fluid2 {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
+  /* Adjustments for Equipo Section */
+  .Equipo {
+    padding: 30px;
+  }
+
+  .card-img-top {
+    height: 300px;
+  }
+
+  /* Adjustments for Servicios Section */
+  .servicios {
+    padding: 30px;
+  }
+}
+
+/* Media Queries for Desktops */
+@media (min-width: 1200px) {
+  /* Adjustments for Quienes Somos Section */
   .quienes-somos-section {
     padding: 40px;
   }
@@ -269,9 +364,10 @@ footer {
 
   .img-fluid2 {
     width: 400px;
-    margin-bottom: 130px;
+    margin-bottom: 20px;
   }
 
+  /* Adjustments for Equipo Section */
   .Equipo {
     padding: 40px;
   }
@@ -280,7 +376,8 @@ footer {
     height: 400px;
   }
 
-  .container1 {
+  /* Adjustments for Servicios Section */
+  .servicios {
     padding: 40px;
   }
 }
